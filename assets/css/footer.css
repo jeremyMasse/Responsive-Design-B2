@@ -1,0 +1,132 @@
+/* -----------------FOOTER------------ */
+
+
+footer{
+    background-color: #E74832;
+    color:white;
+    height:350px;
+    margin-top: 150px;
+    padding-top:50px;
+}
+
+.footer-grid1{
+    display: grid;
+    grid-template-columns: 25% 75%;
+    width:90%;
+    align-items: center;
+    margin:15px auto;
+}
+.footer-grid2{
+    display: grid;
+    justify-items: right;
+    margin-top: 75px;
+    grid-template-columns: repeat(4, auto)
+}
+
+
+footer ul{
+    display:block;
+} 
+
+footer ul li, footer p{
+    font-style: normal;
+    font-size: 12.03px;
+    line-height: 15.09px;
+    letter-spacing: 0.4px;
+    color:white;
+    margin: 0;
+}
+
+footer input{
+    background-color: #E74832;
+    border: 1px solid #FFFFFF;
+    color: white;
+    padding: 15px 25px;
+}
+
+
+.group-footer img{
+    margin:0 10px;
+}
+
+h4{
+    font-size: 22px;
+    line-height: 26px;
+    letter-spacing: -0.55px;
+    margin:0;
+    margin-bottom: 15px;
+}
+
+.alignement{
+    text-align: left;
+}
+
+footer .ligne{
+    width:90%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.bas-footer{
+    display: flex;
+    position: relative;
+    width:90%;
+    margin: 20px auto;
+}
+
+.bas-footer :first-child{
+    position: absolute;
+}
+
+.bas-footer :last-child{
+    position: absolute;
+    right: 0;
+}
+
+@media(max-width:1024px) { 
+    .footer-grid1{
+        grid-template-columns: 35% 65%;
+    }
+}
+
+
+@media(max-width:500px) { 
+    footer{
+        margin-top:0;
+        height:475px;
+        
+    }
+    .footer-grid1{
+        display: block;
+        text-align: center;
+        width:100%;
+    }
+    .footer-grid1 .logo img{
+        width:50%;
+        height:50%;
+    }
+
+    .footer-grid2{
+        grid-template-columns: 1fr 1fr;
+        margin-top:10%;
+        justify-items: left;
+        
+    }
+    .group-footer {
+        padding: 10px;
+    }
+
+    h4{
+        font-size: 18px;
+        line-height: 22px;
+        letter-spacing: -0.50px;
+        margin:0;
+        margin-bottom: 15px;
+    }
+
+    footer input{
+        padding: 8px 15px;
+
+    }
+
+}

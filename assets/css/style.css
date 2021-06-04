@@ -1,0 +1,299 @@
+/* -------------DESACTIVER------------- */
+
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: #003B5C;
+}
+body{
+    margin: 0;
+    color: #003B5C;
+    font-family: HK Grotesk;
+    font-weight:600;
+    font-style: normal;
+}
+
+ul{
+    padding:0;
+}
+
+/* --------------GLOBAL----------------*/
+
+body, .a-newsletter input{
+    font-family: HK Grotesk;
+    font-weight:600;
+    font-style: normal;
+}
+
+/* ----------ARTICLE EN AVANT---------- */
+
+.a-avant{
+    display:grid;
+    grid-template-columns: 60% 40%;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.a-avant-droite{
+    margin-left: 5%;
+}
+
+.image{
+    position:relative;
+    display:flex;
+    justify-content: center;
+}
+
+.image img{
+    width:100%;
+}
+
+.cadre{
+    background-color:white;
+    position:absolute;
+    display:flex;
+    justify-content: center;
+    bottom: 0;
+    width: 65%;
+    height:10%;
+}
+
+.text{
+    margin: 0 auto;
+    text-align: center;
+    width: 65%;
+}
+
+.a-avant-gauche .text h1{
+    width:90%;
+    margin: 25px auto;
+}
+
+.text p, h1, .a-newsletter {
+    font-family: Libre Baskerville;
+    font-weight:400;
+    font-style: normal;
+    letter-spacing:  -0.4px;
+}
+.text p{
+    font-size: 16px;
+    line-height: 28px;
+    color: #5D534F;
+}
+
+.a-avant-droite .cadre{
+    width: 80%;
+}
+
+.a-avant-droite .text{
+    width:90%
+}
+
+.text a, article a  {
+    color: red;
+}
+.cadre :last-child, .flex :last-child{
+    margin-left: 5px;
+    color: rgba(93, 83, 79, 0.6);
+}
+
+h1{
+    font-size: 36px;
+    line-height: 39px;
+}
+
+/* -----------------ARTICLES------------ */
+
+.a-montres, .a-automobiles, .a-lifestyle, .a-sports{
+    margin: 0 auto;
+    margin-top:150px;
+    width: 95%;
+    border: 1 solid red;
+}
+
+.ligne{
+    border-top-style: double;
+    border-top-color: #E5DBD1;
+    width:45%;
+}
+.container{
+    display: flex;
+    height:35px;
+}
+h2{
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing:  1px;
+    margin: 25px 1.25%;
+    position:relative;
+    top:-45px;
+    height:30px;
+    text-align: center;
+    border: 1px solid #E5DBD1;
+    padding: 5px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width:15%; 
+} 
+
+.shop-grid{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.img-shop{
+    width:100%;
+}
+
+.margin-shop{
+    margin:2%;
+}
+.description p{
+    display:flex;
+}
+
+.flex{
+    font-size: 12.03px;
+    line-height: 15.09px;
+    letter-spacing:  0.4px;
+    display:flex;
+}
+
+h3{
+    font-family: Libre Baskerville;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 22.5px;
+    line-height: 31px;
+    letter-spacing:  -0.4px;
+    margin: 0 0 10px 0;
+}
+
+.a-automobiles ul, .a-montres ul, 
+.a-lifestyle ul, .a-sports ul {
+    color: rgba(79, 77, 77, 0.6);
+}
+
+article .group-flex a{
+    position: absolute;
+    right:0;
+}
+
+
+/* -----------------NEWSLETTER------------ */
+.a-newsletter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    background: url("../images/FILIGRANE.png");
+    text-align: center;
+    padding:100px;
+    margin-top:150px;
+}
+.a-newsletter{
+    text-align: center;
+}
+
+.a-newsletter h1{
+    font-style: italic;
+    font-size: 52px;
+    line-height: 54px;
+    letter-spacing:  -0.87px;
+    margin-top: 0;
+}
+
+.a-newsletter p{
+    width: 55%;
+    margin:50px auto;
+    font-size: 22px;
+    line-height: 31px;
+}
+
+.a-newsletter input{
+    font-size: 15.03px;
+    line-height: 18.85px;
+    letter-spacing: 0.5px;
+    background-color: white;
+    border: 1px solid #003B5C;
+    padding:10px 50px;
+    color: #003B5C;
+}
+
+ /*mode ipad pro choisis pour le responsive tablette, 
+ la seule chose cassé est le logo dans le footer qui chevauche le reste voir dans le fichier footer.css*/
+
+
+ @media(max-width:500px){ /* mode iphone X choisis pour le responsive mobile
+    /* -----ARTICLE EN AVANT -------*/
+    .a-avant{
+        grid-template-columns: 1fr;
+    }
+    .a-avant-droite, .a-avant-gauche{
+        margin-bottom: 100px;
+    }
+    .a-avant-droite{
+        margin-left: 0;
+    }
+    h1{
+        font-size: 30px;
+        line-height: 34px;
+    }
+
+    .text{
+        width:100%;
+    }
+    .a-avant .cadre{
+        width:100%
+    }
+
+    /* -----ARTICLE------*/
+    .a-montres{
+        margin-top:50px;
+    }
+
+    h2{
+        width:80%;
+    }
+
+    article ul{
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+    article .group-flex a{
+        position: relative;
+        left: 35%;
+    }
+    article .group-flex{
+        margin-bottom: 10px;
+    }
+
+    article .group-flex li{
+        margin:3px;
+    }
+    .shop-grid{
+        grid-template-columns: 1fr;
+    }
+    .margin-shop{
+        margin-bottom:15%;
+    }
+
+    /* -------NEWSLETTER------ */
+
+    .a-newsletter{
+        margin-top: 50px;
+        padding:20px;
+    }
+    .a-newsletter h1{
+        font-size: 38px;
+    }
+    .a-newsletter p{
+        text-align: center;
+        width:100%;
+    }
+    .newsletter-text{
+        width:100%;
+    }
+ }
